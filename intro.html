@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title> 1 Introducción al Cálculo de Probabilidades | Probabilidad</title>
+  <meta name="description" content="Este libro forma parte del material utilizado en clase durante los cursos 2020-21 y 2021-22 en la asignatura de Probabilidad del grado de Matemáticas en la UCM. Está pensado para que sea de uso exclusivo para los alumnos del doble grado de Economía y Matemáticas." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content=" 1 Introducción al Cálculo de Probabilidades | Probabilidad" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Este libro forma parte del material utilizado en clase durante los cursos 2020-21 y 2021-22 en la asignatura de Probabilidad del grado de Matemáticas en la UCM. Está pensado para que sea de uso exclusivo para los alumnos del doble grado de Economía y Matemáticas." />
+  <meta name="github-repo" content="https://github.com/NMANMA/classRoomFiles" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 1 Introducción al Cálculo de Probabilidades | Probabilidad" />
+  
+  <meta name="twitter:description" content="Este libro forma parte del material utilizado en clase durante los cursos 2020-21 y 2021-22 en la asignatura de Probabilidad del grado de Matemáticas en la UCM. Está pensado para que sea de uso exclusivo para los alumnos del doble grado de Economía y Matemáticas." />
+  
+
+<meta name="author" content="Nirian Martín y Leandro Pardo" />
+
+
+<meta name="date" content="2021-08-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="probabilidad.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Probabilidad (Nirian Martín & Leandro Pardo)</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prólogo</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción al Cálculo de Probabilidades</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#experimento-aleatorio"><i class="fa fa-check"></i><b>1.1</b> Experimento aleatorio</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#lımites-de-sucesiones-de-sucesos"><i class="fa fa-check"></i><b>1.2</b> Lı́mites de sucesiones de sucesos</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#álgebras-y-sigma-álgebras"><i class="fa fa-check"></i><b>1.3</b> Álgebras y <span class="math inline">\(\sigma\)</span>-álgebras</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#colección-de-problemas"><i class="fa fa-check"></i>Colección de Problemas</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#ejercicios-extra"><i class="fa fa-check"></i>Ejercicios extra</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="probabilidad.html"><a href="probabilidad.html"><i class="fa fa-check"></i><b>2</b> Probabilidad</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="probabilidad.html"><a href="probabilidad.html#colección-de-problemas-1"><i class="fa fa-check"></i><b>2.1</b> Colección de problemas</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado con Bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Probabilidad</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1" number="1">
+<h1><span class="header-section-number"> 1</span> Introducción al Cálculo de Probabilidades</h1>
+<div id="experimento-aleatorio" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Experimento aleatorio</h2>
+<div class="definition">
+<p><span id="def:unlabeled-div-1" class="definition"><strong>Definición 1.1  (Experimento aleatorio) </strong></span>Un experimento aleatorio es aquél que verifica las siguientes
+condiciones:</p>
+<p>a) Se conocen previamente los posibles resultados del experimento.</p>
+<p>b) Es imposible conocer el resultado antes de realizarlo.</p>
+<p>c) Si se realiza el experimento sucesivas veces en las mismas
+condiciones pueden aparecer resultados distintos.</p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-2" class="example"><strong>Ejemplo 1.1  </strong></span>Algunos experimentos aleatorios</p>
+<ul>
+<li><p>Lanzamiento de un dado al aire.</p></li>
+<li><p>Consumo de agua diario en una ciudad.</p></li>
+<li><p>Tiempo que tarda cada uno de nosotros en llegar a la facultad cada
+dı́a.</p></li>
+</ul>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-3" class="definition"><strong>Definición 1.2  (Espacio muestral) </strong></span>Se denomina espacio muestral al conjunto de todos los posibles
+resultados (elementos muestrales) asociados a un experimento aleatorio.
+En adelante se denotará mediante <span class="math inline">\(\Omega\)</span>.</p>
+</div>
+<div class="example">
+<p><span id="exm:e1" class="example"><strong>Ejemplo 1.2  </strong></span>Determinación del espacio muestral:</p>
+<ul>
+<li><p>En el experimento aleatorio “Lanzamiento de una moneda”, llamando
+<span class="math inline">\(c\)</span> a “obtener cara” y <span class="math inline">\(x\)</span> a “obtener cruz”, se tiene
+<span class="math display">\[\Omega=\{c,x\};\]</span></p></li>
+<li><p>En el experimento aleatorio “Lanzamiento de dos monedas
+distinguibles”, el orden en los sı́mbolos permite expresar su
+distinción, y se tiene <span class="math display">\[\Omega=\{cc,cx,xc,xx\};\]</span></p></li>
+<li><p>En el experimento aleatorio “Lanzamiento de dos monedas
+indistinguibles”, el orden en los sı́mbolos es indiferente (<span class="math inline">\(cx=xc\)</span>),
+y se tiene <span class="math display">\[\Omega=\{cc,cx,xx\};\]</span></p></li>
+<li><p>En el experimento aleatorio “Lanzamiento de monedas hasta que se
+obtenga cara”, se tiene <span class="math display">\[\Omega=\{c,xc,xxc,xxxc,...\};\]</span></p></li>
+<li><p>En el experimento aleatorio “Tiempo (en minutos) que tarda uno de
+nosotros en llegar a la facultad cada dı́a”, se tiene
+<span class="math display">\[\Omega=(0,1440).\]</span> Obsérvese que los 4 primeros espacios
+muestrales son ” numerables” y el último “no numerable”. Los 3
+primeros poseen un número “finito” de “elementos muestrales” y los 2
+últimos, ” infinito”. Los elementos muestrales se suelen denotar
+mediante minúscula y uno genérico se denota como <span class="math inline">\(\omega\in\Omega\)</span>.</p></li>
+</ul>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-4" class="definition"><strong>Definición 1.3  (Suceso) </strong></span>Se denomina suceso a cualquier subconjunto del espacio muestral.
+Habitualmente un suceso se denota en mayúscula y si se expresa mediante
+los elementos que lo componen, deben ser expresados entre llaves.</p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-5" class="example"><strong>Ejemplo 1.3  </strong></span>En el experimento aleatorio
+“Lanzamiento de dos monedas indistinguibles” (ver Ejemplo <a href="intro.html#exm:e1">1.2</a>),
+<span class="math inline">\(A=\{cc,xc,xc\}\)</span> respresenta el suceso “obtener al menos una cara en el
+lanzamiento de dos monedas indistinguibles”.</p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-6" class="definition"><strong>Definición 1.4  (Espacio de sucesos o Espacio de partes) </strong></span>Se denomina espacio de sucesos (o de partes) a la familia de todos los
+subconjuntos posibles del espacio muestral. Habitualmente se denota
+mediante <span class="math inline">\(\mathcal{P}(\Omega)\)</span>.</p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-7" class="example"><strong>Ejemplo 1.4  </strong></span>En el experimento aleatorio
+“Lanzamiento de una moneda” (ver Ejemplo <a href="intro.html#exm:e1">1.2</a>),
+<span class="math display">\[\mathcal{P}(\Omega)=\{\varnothing,\{c\},\{x\},\Omega\}.\]</span></p>
+</div>
+</div>
+<div id="lımites-de-sucesiones-de-sucesos" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Lı́mites de sucesiones de sucesos</h2>
+<div class="definition">
+<p><span id="def:unlabeled-div-8" class="definition"><strong>Definición 1.5  (Sucesión de sucesos) </strong></span>La familia de sucesos <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> se llama sucesión de
+sucesos asociada al espacio muestral <span class="math inline">\(\Omega\)</span>, siempre que exista una
+aplicación <span class="math display">\[f:\;\longrightarrow\mathcal{P}(\Omega)\]</span> tal que cada número natural tiene
+asociado un suceso del espacio de sucesos
+<span class="math display">\[\qquad\quad n\leadsto f(n)=A_{n}.\]</span></p>
+</div>
+<div class="definition">
+<p><span id="def:def0" class="definition"><strong>Definición 1.6  (Límite superior (inferior) de una sucesión de sucesos) </strong></span>Sea <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> una
+sucesión de sucesos asociada al espacio muestral <span class="math inline">\(\Omega\)</span>. El lı́mite
+superior de <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> se define como
+<span class="math display">\[\limsup_{n\rightarrow\infty}A_{n}=\overline{\lim_{n\rightarrow\infty}}%
+A_{n}=\bigcap\limits_{n=1}^{\infty}\left(  \bigcup\limits_{k=n}^{\infty}%
+A_{k}\right)  =\bigcap\limits_{n=1}^{\infty}\bigcup\limits_{k=n}^{\infty}%
+A_{k},\]</span> y el lı́mite inferior de <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> a
+<span class="math display">\[\liminf_{n\rightarrow\infty}A_{n}=\underline{\lim_{n\rightarrow\infty}}%
+A_{n}=\bigcup\limits_{n=1}^{\infty}\left(  \bigcap\limits_{k=n}^{\infty}%
+A_{k}\right)  =\bigcup\limits_{n=1}^{\infty}\bigcap\limits_{k=n}^{\infty}%
+A_{k}.\]</span> Obsérvese que para la sucesión de números reales <span class="math inline">\(\{x_{n} \}_{n=1}^{\infty}\)</span> existen definiciones muy similares de lı́mite superior
+e inferior <span class="math display">\[\begin{aligned}
+\limsup_{n\rightarrow\infty}x_{n} &amp;  =\overline{\lim_{n\rightarrow\infty}%
+}x_{n}=\underset{n\geq1}{\inf}\left(  \underset{k\geq n}{\sup}x_{k}\right)
+=\underset{n\geq1}{\inf}\underset{k\geq n}{\sup}x_{k},\\
+\liminf_{n\rightarrow\infty}x_{n} &amp;  =\underline{\lim_{n\rightarrow\infty}%
+}x_{n}=\underset{n\geq1}{\sup}\left(  \underset{k\geq n}{\inf}x_{k}\right)
+=\underset{n\geq1}{\sup}\underset{k\geq n}{\inf}x_{k}.\end{aligned}\]</span></p>
+</div>
+<div class="exercise">
+<p><span id="exr:unlabeled-div-9" class="exercise"><strong>Ejercicio 1.1  </strong></span>Sea <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span>
+una sucesión de sucesos definida como <span class="math display">\[A_{n}=\left\{
+\begin{array}
+[c]{ll}%
+\left(  -\frac{1}{n},1\right]  , &amp; n\text{ es impar}\\
+\left(  -1,\frac{1}{n}\right]  , &amp; n\text{ es par}%
+\end{array}
+\right.  .\]</span> Calcúlese el lı́mite superior e inferior de
+<span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span>.</p>
+</div>
+<div class="solution">
+<p><span id="unlabeled-div-10" class="solution"><em>Solución</em>. </span>En primer lugar se van a ver las expresiones de los sucesos para los
+primeros ı́ndices: <span class="math display">\[\begin{aligned}
+&amp; A_{1}=\left(  -1,1\right]  ,\qquad A_{2}=\left(  -1,1\right]  ,\\
+&amp; A_{3}=\left(  -\frac{1}{2},1\right]  ,\qquad A_{4}=\left(  -1,\frac{1}%
+{2}\right]  ,\\
+&amp; A_{5}\underset{\vdots}{=}\left(  -\frac{1}{3},1\right]  ,\qquad
+A_{6}\underset{\vdots}{=}\left(  -1,\frac{1}{3}\right]  .\end{aligned}\]</span>
+Obsérvese que
+<span class="math display">\[\{A_{n}\}_{n=1}^{\infty}=\{A_{2h-1},A_{2h}\}_{h=1}^{\infty}.\]</span> Puesto
+que <span class="math inline">\(A_{2h-1}\cup A_{2h}=\left( -1,1\right]\)</span> para todo <span class="math inline">\(h=1,2,...\)</span>, se
+tiene <span class="math display">\[\bigcup\limits_{k=n}^{\infty}A_{k}=\left(  -1,1\right]  .\]</span> Por
+otro lado, puesto el único punto en común que tienen <span class="math inline">\(A_{2h-1}\cap A_{2h}=\left( -\frac{1}{h},\frac{1}{h}\right]\)</span> para cualquier valor de
+<span class="math inline">\(h\)</span>, es <span class="math inline">\(\{0\}\)</span>, se tiene <span class="math display">\[\bigcap\limits_{k=n}^{\infty}A_{k}=\{0\}.\]</span>
+Por tanto, <span class="math display">\[\begin{aligned}
+\limsup_{n\rightarrow\infty}A_{n} &amp;  =\overline{\lim_{n\rightarrow\infty}%
+}A_{n}=\bigcap\limits_{n=1}^{\infty}\left(  -1,1\right]  =\left(  -1,1\right]
+,\\
+\liminf_{n\rightarrow\infty}A_{n} &amp;  =\underline{\lim_{n\rightarrow\infty}%
+}A_{n}=\bigcup\limits_{n=1}^{\infty}\{0\}=\{0\}.\end{aligned}\]</span></p>
+</div>
+<div class="proposition">
+<p><span id="prp:prop1" class="proposition"><strong>Proposición 1.1  </strong></span>Sea <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> una sucesión de sucesos asociada al
+espacio muestral <span class="math inline">\(\Omega\)</span>. El lı́mite superior de
+<span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> verifica
+<span class="math display">\[\limsup_{n\rightarrow\infty}A_{n}=\overline{\lim_{n\rightarrow\infty}}%
+A_{n}=\{\omega\in\Omega:\;\omega\text{ pertenece a una cantidad infinita de
+sucesos de }\{A_{n}\}_{n=1}^{\infty}\}.\]</span> El lı́mite inferior de
+<span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> verifica
+<span class="math display">\[\liminf_{n\rightarrow\infty}A_{n}=\underline{\lim_{n\rightarrow\infty}}%
+A_{n}=\{\omega\in\Omega:\;\omega\text{ pertenece a todos los sucesos de
+}\{A_{n}\}_{n=1}^{\infty},\]</span> <span class="math display">\[\text{ excepto una cantidad finita}\}.\]</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-11" class="proof"><em>Demostración</em>. </span><span class="math display">\[
+\begin{aligned}
+&amp; \omega \in \overline{\lim_{n\rightarrow \infty }}A_{n}=\bigcap%
+\limits_{n=1}^{\infty }\left( \bigcup\limits_{k=n}^{\infty }A_{k}\right)  \\
+&amp; \Leftrightarrow \omega \in \bigcup\limits_{k=n}^{\infty }A_{k}\;\forall
+n\in 
+\mathbb{N}
+\\
+&amp; \Leftrightarrow \forall n\in 
+\mathbb{N}
+\;\exists k=k(n)\geq n\;\text{t.q. }\omega \in A_{k} \\
+&amp; \Leftrightarrow \omega \text{ pertenece a una cantidad infinita de sucesos
+de }\{A_{n}\}_{n=1}^{\infty };
+\end{aligned}
+\]</span>
+<span class="math display">\[
+\begin{aligned}
+&amp; \omega \in \underline{\lim_{n\rightarrow \infty }}A_{n}=\bigcup%
+\limits_{n=1}^{\infty }\left( \bigcap\limits_{k=n}^{\infty }A_{k}\right)  \\
+&amp; \Leftrightarrow \exists n\in 
+\mathbb{N}
+\;\text{t.q. }\omega \in \bigcap\limits_{k=n}^{\infty }A_{k} \\
+&amp; \Leftrightarrow \exists n\in 
+\mathbb{N}
+\;\text{t.q. }\omega \in A_{k}\text{ }\forall k\geq n \\
+&amp; \Leftrightarrow \omega \text{ pertenece a todos los sucesos de }%
+\{A_{n}\}_{n=1}^{\infty }\text{, excepto una cantidad finita.}
+\end{aligned}
+\]</span>
+La doble implicación de la pertenencia justifica la igualdad de ambos sucesos.</p>
+</div>
+<div class="proposition">
+<p><span id="prp:unlabeled-div-12" class="proposition"><strong>Proposición 1.2  </strong></span>Sea <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span>
+una sucesión de sucesos asociada al espacio muestral <span class="math inline">\(\Omega\)</span>. Entonces,
+<span class="math display">\[\underline{\lim_{n\rightarrow\infty}}A_{n}\subset\overline{%
+\lim_{n\rightarrow \infty}}A_{n}.\]</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-13" class="proof"><em>Demostración</em>. </span><span class="math display">\[
+\begin{aligned}
+&amp; \omega \in \underline{\lim_{n\rightarrow \infty }}A_{n}\underset{\text{
+Prop previa}}{\Longrightarrow }\omega \text{ pertenece a todos los sucesos
+de }\{A_{n}\}_{n=1}^{\infty }\text{, excepto una cantidad finita} \\
+&amp; \Longrightarrow \omega \text{ pertenece a una cantidad infinita de sucesos
+de }\{A_{n}\}_{n=1}^{\infty }\underset{\text{Prop previa}}{\Longrightarrow 
+}\omega \in \overline{\lim_{n\rightarrow \infty }}A_{n}.
+\end{aligned}
+\]</span>
+Por Prop previa se entiende la Proposición <a href="intro.html#prp:prop1">1.1</a></p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-14" class="definition"><strong>Definición 1.7  (Límite de una sucesión de sucesos) </strong></span>Sea <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> una sucesión de sucesos asociada al
+espacio muestral <span class="math inline">\(\Omega\)</span>. Se dice que existe el lı́mite de la
+sucesión de sucesos si
+<span class="math display">\[\underline{\lim_{n\rightarrow\infty}}A_{n}=\overline{\lim_{n\rightarrow\infty
+}}A_{n},\]</span> y se denota <span class="math display">\[\lim_{n\rightarrow\infty}A_{n}.\]</span></p>
+</div>
+<div class="exercise">
+<p><span id="exr:Ejer2" class="exercise"><strong>Ejercicio 1.2  </strong></span>Sea <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span>
+una sucesión de sucesos definida como <span class="math display">\[A_{n}=\{x\in%
+%TCIMACRO{\U{211d} }%
+%BeginExpansion
+\mathbb{R}
+%EndExpansion
+:\;x&lt;\tfrac{1}{n}\}.\]</span> Calcúlese el lı́mite superior e inferior de
+<span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}%\)</span>, para comprobar si existe el lı́mite.</p>
+</div>
+<div class="solution">
+<p><span id="unlabeled-div-15" class="solution"><em>Solución</em>. </span><span class="math display">\[\begin{aligned}
+\overline{\lim_{n\rightarrow\infty}}A_{n} &amp;  =\bigcap\limits_{n=1}^{\infty
+}\left(  \bigcup\limits_{k=n}^{\infty}A_{k}\right)  =\bigcap\limits_{n=1}%
+^{\infty}\left(  -\infty,\frac{1}{n}\right)  =\left(  -\infty,0\right]  ,\\
+\underline{\lim_{n\rightarrow\infty}}A_{n} &amp;  =\bigcup\limits_{n=1}^{\infty
+}\left(  \bigcap\limits_{k=n}^{\infty}A_{k}\right)  =\bigcup\limits_{n=1}%
+^{\infty}\left(  -\infty,0\right]  =\left(  -\infty,0\right]  .\end{aligned}\]</span>
+Por tanto, al ser efectivamente ambos iguales, sı́ existe el lı́mite de
+<span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span>.</p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-16" class="definition"><strong>Definición 1.8  </strong></span>Sea <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> una sucesión de sucesos asociada al
+espacio muestral <span class="math inline">\(\Omega\)</span>. Se dice que la sucesión de sucesos es
+monótona creciente si <span class="math display">\[A_{1}\subset A_{2}\subset A_{3}\subset\cdots\]</span> y
+se denota <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\uparrow\)</span>. Se dice que la sucesión de
+sucesos es monótona decreciente si
+<span class="math display">\[A_{1}\supset A_{2}\supset A_{3}\supset\cdots\]</span> y se denota
+<span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\downarrow\)</span>.</p>
+</div>
+<div class="proposition">
+<p><span id="prp:Prop4" class="proposition"><strong>Proposición 1.3  </strong></span>Sea <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span>
+una sucesión de sucesos monótona asociada al espacio muestral <span class="math inline">\(\Omega\)</span>:</p>
+<p>a) <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\uparrow\Longrightarrow\lim_{n\rightarrow  \infty}A_{n}=\bigcup\limits_{n=1}^{\infty}A_{n}\)</span>.</p>
+<p>b) <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\downarrow\Longrightarrow\lim  _{n\rightarrow\infty}A_{n}=\bigcap\limits_{n=1}^{\infty}A_{n}\)</span>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-17" class="proof"><em>Demostración</em>. </span>Para el apartado a), se verá cuál es el lı́mite superior
+<span class="math display">\[\{A_{n}\}_{n=1}^{\infty}\uparrow\Longrightarrow\bigcup\limits_{k=n}^{\infty
+}A_{k}=\bigcup\limits_{k=1}^{\infty}A_{k}\Longrightarrow\overline
+{\lim_{n\rightarrow\infty}}A_{n}=\bigcap\limits_{n=1}^{\infty}\left(
+\bigcup\limits_{k=n}^{\infty}A_{k}\right)  =\bigcap\limits_{n=1}^{\infty
+}\left(  \bigcup\limits_{k=1}^{\infty}A_{k}\right)  =\bigcup\limits_{k=1}%
+^{\infty}A_{k}.\]</span> Para el apartado a), se verá cuál es el lı́mite
+inferior
+<span class="math display">\[\{A_{n}\}_{n=1}^{\infty}\uparrow\Longrightarrow\bigcap\limits_{k=n}^{\infty
+}A_{k}=A_{n}\Longrightarrow\underline{\lim_{n\rightarrow\infty}}A_{n}%
+=\bigcup\limits_{n=1}^{\infty}\left(  \bigcap\limits_{k=n}^{\infty}%
+A_{k}\right)  =\bigcup\limits_{n=1}^{\infty}A_{n}.\]</span> El apartado a)
+queda demostrado, por coincidir ambos lı́mites superior e inferior.Para
+el apartado b), se verá cuál es el lı́mite superior
+<span class="math display">\[\{A_{n}\}_{n=1}^{\infty}\downarrow\Longrightarrow\bigcup\limits_{k=n}^{\infty
+}A_{k}=A_{n}\Longrightarrow\overline{\lim_{n\rightarrow\infty}}A_{n}%
+=\bigcap\limits_{n=1}^{\infty}A_{n}.\]</span> Para el apartado b), se verá cuál
+es el lı́mite inferior
+<span class="math display">\[\{A_{n}\}_{n=1}^{\infty}\downarrow\Longrightarrow\bigcap\limits_{k=n}^{\infty
+}A_{k}=\bigcap\limits_{k=1}^{\infty}A_{k}\Longrightarrow\underline{\lim
+_{n\rightarrow\infty}}A_{n}=\bigcup\limits_{n=1}^{\infty}\left(
+\bigcap\limits_{k=n}^{\infty}A_{k}\right)  =\bigcup\limits_{n=1}^{\infty
+}\left(  \bigcap\limits_{k=1}^{\infty}A_{k}\right)  =\bigcap\limits_{k=1}%
+^{\infty}A_{k}.\]</span> El apartado b) queda demostrado, por coincidir ambos
+lı́mites superior e inferior.</p>
+</div>
+<div class="example">
+<p><span id="exm:Ejer3" class="example"><strong>Ejemplo 1.5  </strong></span>La sucesión de sucesos definida en el Ejercicio <a href="intro.html#exr:Ejer2">1.2</a> es monótona decreciente y se verifica
+que el lı́mite es efectivamente la intersección de la sucesión de sucesos.</p>
+</div>
+</div>
+<div id="álgebras-y-sigma-álgebras" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Álgebras y <span class="math inline">\(\sigma\)</span>-álgebras</h2>
+<div class="definition">
+<p><span id="def:def1" class="definition"><strong>Definición 1.9  (Álgebra) </strong></span>Sea <span class="math inline">\(\mathcal{A}\)</span> una familia no
+vacı́a de subconjuntos de espacio muestral <span class="math inline">\(\Omega\)</span>, es decir
+<span class="math inline">\(\mathcal{A\subset P}(\Omega)\)</span>, t.q. <span class="math inline">\(\mathcal{A\neq\varnothing}\)</span>. Se
+dice que <span class="math inline">\(\mathcal{A}\)</span> tiene estructura de álgebra si verifica:</p>
+<p>a) ser cerrado ante la operación complementario
+<span class="math display">\[A\in\mathcal{A\Rightarrow}A^{C}\in\mathcal{A}.\]</span></p>
+<p>b) ser cerrado ante la operación de una unión finita de sucesos
+<span class="math display">\[A_{1},...,A_{k}\in\mathcal{A\Rightarrow}\bigcup\limits_{n=1}^{k}A_{n}%
+    =A_{1}\cup\cdots\cup A_{k}\in\mathcal{A}.\]</span></p>
+</div>
+<div class="definition">
+<p><span id="def:def2" class="definition"><strong>Definición 1.10  </strong></span><strong>(<span class="math inline">\(\sigma\)</span>-álgebra)</strong> Sea <span class="math inline">\(\mathcal{A}\)</span> una familia no
+vacı́a de subconjuntos de espacio muestral <span class="math inline">\(\Omega\)</span>, es decir
+<span class="math inline">\(\mathcal{A\subset P}(\Omega)\)</span>, t.q. <span class="math inline">\(\mathcal{A\neq\varnothing}\)</span>. Se
+dice que <span class="math inline">\(\mathcal{A}\)</span> tiene estructura de <span class="math inline">\(\sigma\)</span>-álgebra si
+verifica:</p>
+<p>a) ser cerrado ante la operación complementario
+<span class="math display">\[A\in\mathcal{A\Rightarrow}A^{C}\in\mathcal{A}.\]</span></p>
+<p>b) ser cerrado ante la operación de una unión infinita de sucesos
+<span class="math display">\[A_{1},...,A_{n},...\in\mathcal{A\Rightarrow}\bigcup\limits_{n=1}^{\infty}%
+            A_{i}=A_{1}\cup\cdots\cup A_{n}\cup\cdots\in\mathcal{A}.\]</span></p>
+</div>
+<div class="remark">
+<p><span id="Obs1" class="remark"><em>Nota</em>. </span>La Definición <a href="intro.html#def:def2">1.10</a> es más
+general que <a href="intro.html#def:def1">1.9</a>, es decir si <span class="math inline">\(\mathcal{A}\)</span> tiene estructura
+de <span class="math inline">\(\sigma\)</span>-álgebra también tiene estructura de álgebra. De hecho, basta
+tomar <span class="math inline">\(A_{k}=A_{k+1}=\cdots\)</span> para convertir una unión infinita en una
+finita.</p>
+</div>
+<div class="proposition">
+<p><span id="prp:prop2" class="proposition"><strong>Proposición 1.4  </strong></span>Sea <span class="math inline">\(\mathcal{A}\)</span> una familia no
+vacı́a de subconjuntos de espacio muestral <span class="math inline">\(\Omega\)</span>, que tiene estructura
+de álgebra. Se verifican las siguientes aserciones:</p>
+<p>a) <span class="math inline">\(\varnothing,\Omega\in\mathcal{A}\)</span>.</p>
+<p>b) <span class="math inline">\(\mathcal{A}\)</span> es cerrada ante la operación de una intersección
+finita de sucesos
+<span class="math display">\[A_{1},...,A_{k}\in\mathcal{A\Rightarrow}\bigcap\limits_{n=1}^{k}A_{n}%
+    =A_{1}\cap\cdots\cap A_{k}\in\mathcal{A}.\]</span></p>
+<p>c) <span class="math inline">\(\mathcal{A}\)</span> es cerrada ante la operación diferencia de un suceso
+con respecto a otro
+<span class="math display">\[A_{1},A_{2}\in\mathcal{A\Rightarrow}A_{1}-A_{2}\in\mathcal{A}.\]</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-18" class="proof"><em>Demostración</em>. </span><br/>
+a) Se comprueba que <span class="math display">\[\begin{aligned}
+                &amp;  A\in\mathcal{A}\underset{\text{*, a)}%
+                }{\mathcal{\Longrightarrow}}A^{C}\in\mathcal{A}\\
+                &amp;  A,A^{C}\in\mathcal{A}\underset{\text{*,b)}%
+                }{\mathcal{\Longrightarrow}}A\cup A^{-c}=\Omega\in\mathcal{A}\\
+                &amp;  \Omega\in\mathcal{A}\underset{\text{*,a)}%
+                }{\mathcal{\Longrightarrow}}\Omega^{C}=\varnothing\in\mathcal{A}%
+            \end{aligned}\]</span>
+*: Definición <a href="intro.html#def:def1">1.9</a></p>
+<p>b) Se comprueba que
+<span class="math display">\[\bigcap\limits_{n=1}^{k}A_{n}=\left(  \left(  \bigcap\limits_{n=1}^{k}%
+            A_{n}\right)  ^{C}\right)  ^{C}\underset{\text{L. de DeMorgan}}{=}\left(
+            \bigcup\limits_{n=1}^{k}A_{n}^{C}\right)  ^{C}\]</span>
+<span class="math display">\[
+    A_{1},...,A_{k}\in\mathcal{A}\underset{\text{*, a)}}
+            {\mathcal{\Longrightarrow}}A_{1}^{C},...,A_{k}^{C}\in\mathcal{A}
+            \underset{\text{*, b)}}{\mathcal{\Longrightarrow}}
+            \bigcup\limits_{n=1}^{k}A_{n}^{C}\in\mathcal{A}\underset{\text{*, a)}}{\mathcal{\Longrightarrow}}\left(  \bigcup\limits_{n=1}^{k}A_{n}^{C}\right)  ^{C}\in\mathcal{A}.
+    \]</span>
+*: Definición <a href="intro.html#def:def1">1.9</a></p>
+<p>c) Se comprueba que
+<span class="math display">\[
+\begin{aligned}
+                A_{1}-A_{2}  &amp; =A_{1}\cap A_{2}^{C}\\
+                A_{1},A_{2}  &amp; \in\mathcal{A}\underset{\text{*,a)}}{\mathcal{\Longrightarrow}}A_{1},A_{2}^{C}
+                \in\mathcal{A}\underset{\text{**, b)}}{\mathcal{\Longrightarrow}}A_{1}\cap A_{2}^{C}
+                \in\mathcal{A}.
+\end{aligned}
+\]</span></p>
+<p>*: Definición <a href="intro.html#def:def1">1.9</a>;
+**: Proposición <a href="intro.html#prp:prop2">1.4</a></p>
+</div>
+<div class="proposition">
+<p><span id="prp:prop3" class="proposition"><strong>Proposición 1.5  </strong></span>Sea <span class="math inline">\(\mathcal{A}\)</span> una familia no vacı́a de
+subconjuntos de espacio muestral <span class="math inline">\(\Omega\)</span>, que tiene estructura de
+<span class="math inline">\(\sigma\)</span>-álgebra. Se verifican las siguientes aserciones:</p>
+<p>a) <span class="math inline">\(\mathcal{A}\)</span> es cerrada ante la operación de una intersección
+infinita de sucesos
+<span class="math display">\[A_{1},...,A_{n},...\in\mathcal{A\Rightarrow}\bigcap\limits_{n=1}^{\infty}%
+            A_{i}=A_{1}\cap\cdots\cap A_{n}\cap\cdots\in\mathcal{A}.\]</span></p>
+<p>b) <span class="math inline">\(\mathcal{A}\)</span> es cerrada ante las operaciones limite superior e
+inferior de sucesos. <span class="math display">\[\begin{aligned}
+                A_{1},...,A_{n},... &amp;  \in\mathcal{A\Rightarrow}\overline{\lim_{n\rightarrow
+                        \infty}}A_{n}\in\mathcal{A},\\
+                A_{1},...,A_{n},... &amp;  \in\mathcal{A\Rightarrow}\underline{\lim_{n\rightarrow
+                        \infty}}A_{n}\in\mathcal{A}%
+            \end{aligned}\]</span></p>
+<p>c) Sea <span class="math inline">\(\{\mathcal{A}_{i}\}_{i\in I}\)</span> una familia de familias no
+vacı́as de subconjuntos de espacio muestral <span class="math inline">\(\Omega\)</span>, que tienen
+estructura de <span class="math inline">\(\sigma\)</span>-álgebra. La intersección de ellas,
+<span class="math inline">\(\mathcal{A=}\bigcap\limits_{i\in I}\mathcal{A}_{i}\)</span>, tiene también
+estructura de <span class="math inline">\(\sigma\)</span>-álgebra.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-19" class="proof"><em>Demostración</em>. </span><br/>
+a) Basta comprobar que
+<span class="math display">\[\bigcap\limits_{n=1}^{\infty}A_{n}=\left(  \left(  \bigcap\limits_{n=1}%
+            ^{\infty}A_{n}\right)  ^{C}\right)  ^{C}\underset{\text{L. de DeMorgan}%
+            }{=}\left(  \bigcup\limits_{n=1}^{\infty}A_{n}^{C}\right)  ^{C}%\]</span>
+<span class="math display">\[A_{1},...,A_{n},...\in\mathcal{A}\underset{\text{*,a)}}{\mathcal{\Longrightarrow}}
+    A_{1}^{C},...,A_{n}^{C},...\in\mathcal{A}
+            \underset{\text{*,b)}}{\mathcal{\Longrightarrow}}
+            \bigcup\limits_{n=1}^{\infty}A_{n}^{C}\in\mathcal{A}\underset{\text{*,a)}}{\mathcal{\Longrightarrow}}\left(  \bigcup\limits_{n=1}
+            ^{\infty}A_{n}^{C}\right)  ^{C}\in\mathcal{A}.\]</span>
+*: Definición <a href="intro.html#def:def2">1.10</a>
+<br/>
+b) Basta considerar las Definiciones <a href="intro.html#def:def0">1.6</a>, <a href="intro.html#def:def2">1.10</a>;
+(apartado b) y a) de esta Proposición.</p>
+<p>c) Basta comprobar que
+<span class="math display">\[A\in\mathcal{A\Longrightarrow}A\in\mathcal{A}_{i}\mathcal{\;\forall}i\in
+            I\underset{\text{*, a)}}{\mathcal{\Longrightarrow}}A^{C}%
+            \in\mathcal{A}_{i}\mathcal{\;\forall}i\in I\mathcal{\Longrightarrow}A^{C}%
+            \in\mathcal{A},\]</span>
+<span class="math display">\[A_{1},...,A_{n},...\in\mathcal{A\Longrightarrow}A_{1},...,A_{n},...\in
+            \mathcal{A}_{i}\mathcal{\;\forall}i\in I\underset{\text{*,b)}}{\mathcal{\Longrightarrow}}\bigcup\limits_{n=1}^{\infty}A_{i}%
+            \in\mathcal{A}_{i}\mathcal{\;\forall}i\in I\mathcal{\Longrightarrow}%
+            \bigcup\limits_{n=1}^{\infty}A_{i}\in\mathcal{A}.\]</span>
+*: Definición <a href="intro.html#def:def2">1.10</a></p>
+</div>
+<div class="proposition">
+<p><span id="prp:unlabeled-div-20" class="proposition"><strong>Proposición 1.6  </strong></span>Sea <span class="math inline">\(\mathcal{A}\)</span> una familia no vacı́a de
+subconjuntos de espacio muestral <span class="math inline">\(\Omega\)</span>, es decir
+<span class="math inline">\(\mathcal{A\subset P}(\Omega)\)</span>, t.q. <span class="math inline">\(\mathcal{A\neq\varnothing}\)</span>.
+<span class="math inline">\(\mathcal{A}\)</span> tiene estructura de <span class="math inline">\(\sigma\)</span>-álgebra si y sólo si:</p>
+<p>a) <span class="math inline">\(\mathcal{A}\)</span> tiene estructura de álgebra.</p>
+<p>b) toda sucesión de sucesos “monótona” contenida en <span class="math inline">\(\mathcal{A}\)</span> es
+cerrada para su lı́mite (su lı́mite pertenece a <span class="math inline">\(\mathcal{A}\)</span>)</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-21" class="proof"><em>Demostración</em>. </span><br/>
+<span class="math inline">\(\Rightarrow\)</span>:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math inline">\(\mathcal{A}\)</span> <span class="math inline">\(\sigma\)</span>-álgebra
+<span class="math inline">\(\Rightarrow\mathcal{A}\)</span> álgebra? Se verifica a partir de observación dada tras la definición de <span class="math inline">\(\sigma\)</span>-álgebra.</p></li>
+<li><p><span class="math inline">\(\mathcal{A}\)</span> <span class="math inline">\(\sigma\)</span>-álgebra <span class="math inline">\(\Rightarrow\)</span> toda sucesión de sucesos
+“monótona” en <span class="math inline">\(\mathcal{A}\)</span> tiene su lı́mite en <span class="math inline">\(\mathcal{A}\)</span>? Se
+verifica a partir de la Proposición
+<a href="intro.html#prp:prop3">1.5</a>,c)</p></li>
+</ol>
+<p><span class="math inline">\(\Leftarrow\)</span>:</p>
+<p><span class="math inline">\(A\in  \mathcal{A\Longrightarrow}A^{C}\in\mathcal{A}\)</span>? Cierto por el
+apartado a) de las Definiones
+<a href="intro.html#def:def1">1.9</a> y
+<a href="intro.html#def:def2">1.10</a>.
+<span class="math inline">\(A_{1},...,A_{n},...\in\mathcal{A\Longrightarrow}\bigcup\limits_{n=1}^{\infty}A_{i}\in\mathcal{A}\)</span>? A partir de una sucesión genérica <span class="math inline">\(\{A_{n}\}_{n=1}^{\infty}\)</span> se define una auxiliar <span class="math inline">\(\{B_{n}\}_{n=1}^{\infty}\)</span>
+siendo <span class="math display">\[B_{n}=\bigcup_{i=1}^{n}A_{i}=A_{1}\cup\cdots\cup A_{n}\]</span> que
+es una sucesión “creciente”. Se tiene,
+<span class="math display">\[
+\begin{aligned}
+        &amp;  A_{1},...,A_{n},...\in\mathcal{A}\text{, }\mathcal{A}\text{ álgebra
+        }\underset{\text{*,b)}}{\mathcal{\Longrightarrow}}
+        B_{1},...,B_{n},...\in\mathcal{A}\text{, }\mathcal{A}\text{ álgebra,
+        }\{B_{n}\}_{n=1}^{\infty}\uparrow\\
+        &amp;  \underset{\text{**,a)}}{\mathcal{\Longrightarrow}}%
+        \bigcup\limits_{n=1}^{\infty}A_{n}=\bigcup\limits_{n=1}^{\infty}B_{n}%
+        =\lim_{n\rightarrow\infty}B_{n}\underset{\text{hip}}{\in}\mathcal{A}\text{.}%
+\end{aligned}
+\]</span>
+*: Definición <a href="intro.html#def:def1">1.9</a>;
+**: Proposición <a href="intro.html#prp:Prop4">1.3</a></p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-22" class="definition"><strong>Definición 1.11  (Espacio probabilizable o medible) </strong></span>Se denomina espacio probabilizable (o medible) al par <span class="math inline">\((\Omega,\mathcal{A})\)</span> siendo
+<span class="math inline">\(\mathcal{A}\)</span> una familia no vacı́a de subconjuntos de espacio muestral
+<span class="math inline">\(\Omega\)</span>, que tiene estructura bien de álgebra o bien de <span class="math inline">\(\sigma\)</span>-álgebra.</p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-23" class="definition"><strong>Definición 1.12  (Álgebra generada) </strong></span>Sea <span class="math inline">\(\mathcal{C}\)</span> una familia no
+vacı́a de subconjuntos de espacio muestral <span class="math inline">\(\Omega\)</span>, es decir
+<span class="math inline">\(\mathcal{C\subset P}(\Omega)\)</span>, t.q. <span class="math inline">\(\mathcal{C\neq\varnothing}\)</span>. Se
+denomina álgebra generada por <span class="math inline">\(\mathcal{C}\)</span> a la intersección de todas
+las álgebras asociadas a <span class="math inline">\(\Omega\)</span> que contienen a <span class="math inline">\(\mathcal{C}\)</span>. Se
+denota mediante <span class="math inline">\(\mathcal{A}(\mathcal{C})\)</span> y representa la mı́nima álgebra que contiene a
+<span class="math inline">\(\mathcal{C}\)</span>.</p>
+</div>
+<div class="proposition">
+<p><span id="prp:Prop5" class="proposition"><strong>Proposición 1.7  </strong></span>Sea <span class="math inline">\(\mathcal{C}\)</span> una familia no vaćía de
+subconjuntos de espacio muestral <span class="math inline">\(\Omega\)</span>, es decir
+<span class="math inline">\(\mathcal{C\subset P}(\Omega)\)</span>, t.q. <span class="math inline">\(\mathcal{C\neq\varnothing}\)</span>. El
+siguiente método da lugar al álgebra generada por <span class="math inline">\(\mathcal{C}\)</span>,
+<span class="math inline">\(\mathcal{A}(\mathcal{C})\)</span>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Se considera la familia de conjuntos de <span class="math inline">\(\mathcal{C}\)</span>, la de
+complementarios, junto con el suceso imposible (conjunto vacı́o) y el
+propio espacio muestral,
+<span class="math display">\[\mathcal{C}_{1}=\{A:A\in\mathcal{C\}\cup}\{A^{C}:A\in\mathcal{C}%
+         \}\mathcal{\cup\{\varnothing\}\cup\{}\Omega\mathcal{\}}.\]</span></p></li>
+<li><p>Se considera la familia de conjuntos formada por todas las
+intersecciones posibles de conjuntos de <span class="math inline">\(\mathcal{C}_{1}\)</span>
+<span class="math display">\[\mathcal{C}_{2}=\{B:B=\bigcap\limits_{i\in I}A_{i},\;A_{i}\in\mathcal{C}%
+         _{1},\;I\subset\{1,\ldots,\mathrm{card}(\mathcal{C}_{1})\}\mathcal{\}}.\]</span></p></li>
+<li><p>Se considera la familia de conjuntos formada por todas las uniones
+posibles de conjuntos disjuntos de <span class="math inline">\(\mathcal{C}_{2}\)</span>,
+<span class="math display">\[\mathcal{A}(\mathcal{C})=\{D:D=\bigcup\limits_{i\in I}D_{i},\;D_{i}%
+         \in\mathcal{C}_{2},\;I\subset\{1,\ldots,\mathrm{card}(\mathcal{C}%
+         _{2})\},\;D_{r}\cap D_{s}=\varnothing,\;r\neq s\mathcal{\}}.\]</span></p></li>
+</ol>
+</div>
+<div class="remark">
+<p><span id="unlabeled-div-24" class="remark"><em>Nota</em>. </span>Se verifica
+<span class="math inline">\(\mathcal{C}_{1}\subset\mathcal{C}_{2}\subset \mathcal{A}(\mathcal{C})\)</span>.</p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-25" class="example"><strong>Ejemplo 1.6  </strong></span>Sea <span class="math inline">\(\Omega=\mathbb{N}\)</span> y <span class="math inline">\(\mathcal{C}=\{\{1\},\{1,2\}\}\)</span>. Entonces
+<span class="math display">\[\begin{aligned}
+        \mathcal{C}_{1} &amp;  =\{\{1\},\{1,2\},\{1\}^{C},\{1,2\}^{C},\mathcal{\varnothing
+        },\Omega\},\\
+        \mathcal{C}_{2} &amp;  =\{\{1\},\{1,2\},\{1\}^{C},\{1,2\}^{C},\mathcal{\varnothing
+        },\Omega\}\cup\{\{1,2\}\cap\{1\}^{C}=\{2\}\}\\
+        &amp;  =\{\{1\},\{2\},\{1,2\},\{1\}^{C},\{1,2\}^{C},\mathcal{\varnothing}%
+        ,\Omega\},\\
+        \mathcal{A}(\mathcal{C}) &amp;  =\{\{1\},\{1,2\},\{1\}^{C},\{1,2\}^{C}%
+        ,\mathcal{\varnothing},\Omega\}\cup\{\{1\}\cup\{1,2\}^{C}=\{2\}^{C}\}\\
+        &amp;  =\{\{1\},\{2\},\{1,2\},\{1\}^{C},\{2\}^{C},\{1,2\}^{C},\mathcal{\varnothing
+        },\Omega\}.
+    \end{aligned}\]</span></p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-26" class="definition"><strong>Definición 1.13  </strong></span><strong>(<span class="math inline">\(\sigma\)</span>-álgebra generada)</strong> Sea <span class="math inline">\(\mathcal{C}\)</span> una
+familia no vacı́a de subconjuntos de espacio muestral <span class="math inline">\(\Omega\)</span>, es decir
+<span class="math inline">\(\mathcal{C\subset P}(\Omega)\)</span>, t.q. <span class="math inline">\(\mathcal{C\neq\varnothing}\)</span>. Se
+denomina <span class="math inline">\(\sigma\)</span>-álgebra generada por <span class="math inline">\(\mathcal{C}\)</span> a la intersección
+de todas las <span class="math inline">\(\sigma\)</span>-álgebras asociadas a <span class="math inline">\(\Omega\)</span> que contienen a
+<span class="math inline">\(\mathcal{C}\)</span>. Se denota mediante <span class="math inline">\(\mathcal{\sigma}(\mathcal{C})\)</span> y
+representa la mı́nima álgebra que contiene a <span class="math inline">\(\mathcal{C}\)</span>.</p>
+</div>
+<div class="remark">
+<p><span id="unlabeled-div-27" class="remark"><em>Nota</em>. </span>No existe un método genérico para la construcción del
+<span class="math inline">\(\sigma\)</span>-álgebra generada por <span class="math inline">\(\mathcal{C}\)</span> (a diferencia de las
+álgebras, para las que tenemos el método descrito en la Proposición
+<a href="intro.html#prp:Prop5">1.7</a>.</p>
+</div>
+<div class="definition">
+<p><span id="def:def3ss1" class="definition"><strong>Definición 1.14  (Aplicación de sucesos) </strong></span>Siendo <span class="math inline">\(\Omega\)</span> y
+<span class="math inline">\(\Omega^{\prime}\)</span> dos conjuntos o espacios muestrales, la aplicación
+<span class="math display">\[\begin{aligned}
+f:\; &amp;  \Omega\longrightarrow\Omega^{\prime}\\
+&amp;  \omega\longmapsto\omega^{\prime}=f(\omega)\end{aligned}\]</span> asigna a
+cada punto de <span class="math inline">\(\omega\in\Omega\)</span> un ” único” punto
+<span class="math inline">\(\omega^{\prime}\in\Omega^{\prime}\)</span> llamado imagen del punto origen
+<span class="math inline">\(\omega\)</span> o valor de la función en el punto origen <span class="math inline">\(\omega\)</span>, y se denota
+mediante <span class="math inline">\(\omega^{\prime}=f(\omega)\)</span>. A <span class="math inline">\(\Omega\)</span> se le llama dominio de
+la aplicación <span class="math inline">\(f\)</span>, mientras que a <span class="math inline">\(\Omega^{\prime}\)</span> se le llama espacio
+final o espacio imagen de <span class="math inline">\(f\)</span>. Aunque la definición básica de la
+aplicación <span class="math inline">\(f\)</span> la hemos establecido sobre el “punto” <span class="math inline">\(\omega\in\Omega\)</span>,
+podemos hablar también de la aplicación <span class="math inline">\(f\)</span> refiriéndonos a un ”
+conjunto” <span class="math inline">\(A\subset\Omega\)</span> como
+<span class="math display">\[f(A)=\{f(\omega)\in\Omega^{\prime}:\;\omega\in A\}\subset\Omega^{\prime},\]</span>
+y en particular <span class="math inline">\(f(\Omega)\subset\Omega^{\prime}\)</span>. Similarmente, podemos
+hablar también de la aplicación <span class="math inline">\(f\)</span> refiriéndonos a una clase no
+vacı́a <span class="math inline">\(\mathcal{C}\subset\mathcal{P}(\Omega)\)</span> como
+<span class="math display">\[f(\mathcal{C})=\{B=f(A)\in\mathcal{P}(\Omega^{\prime}):\;A\in\mathcal{C}%
+\}\subset\mathcal{P}(\Omega^{\prime}),\]</span></p>
+</div>
+<p>Para poder definir <span class="math inline">\(f^{-1}(\omega^{\prime})=\omega\)</span>, es imprescindible
+que la aplicación <span class="math inline">\(f\)</span> sea biyectiva (<span class="math inline">\(f(\Omega)=\Omega^{\prime}\)</span>), sin
+embargo para poder extender dicho concepto al caso de una aplicación
+genérica (<span class="math inline">\(f(\Omega)\subset\Omega^{\prime}\)</span>) es posible definir el
+concepto de aplicación inversa sobre <span class="math inline">\(B\subset\Omega^{\prime}\)</span>, evitando
+que sea sobre <span class="math inline">\(\omega^{\prime}\in\Omega^{\prime}\)</span>.</p>
+<div class="definition">
+<p><span id="def:def3ss6" class="definition"><strong>Definición 1.15  (Inversa de una aplicación de sucesos) </strong></span>Partiendo de
+la Definición <a href="intro.html#def:def3ss1">1.14</a>, se define la aplicación inversa de <span class="math inline">\(f\)</span> como
+<span class="math display">\[\begin{aligned}
+f^{-1}:\;\mathcal{P}(\Omega^{\prime}) &amp;  \longrightarrow\mathcal{P}(\Omega)\\
+B &amp;  \longmapsto B^{\prime}=f^{-1}(B)\end{aligned}\]</span> donde
+<span class="math display">\[f^{-1}(B)=\{\omega\in\Omega:\;f(\omega)\in B\}.\label{eq3ss1}%\]</span>
+Similarmente, podemos hablar también de la aplicación inversa <span class="math inline">\(f^{-1}\)</span>
+refiriéndonos a una clase no vacı́a <span class="math inline">\(\mathcal{C}^{\prime}% \subset\mathcal{P}(\Omega)\)</span> como
+<span class="math display">\[f^{-1}(\mathcal{C}^{\prime})=\{A=f^{-1}(B)\in\mathcal{P}(\Omega):\;B\in
+\mathcal{C}^{\prime}\}\subset\mathcal{P}(\Omega^{\prime}).\]</span></p>
+</div>
+<p>A continuación se presentan unas propiedades que para aquellos alumnos
+que ya los conozca de otra asignatura pueden servir de repaso, ya que
+son fundamentales en le tercer tema de esta asignatura.</p>
+<div class="proposition">
+<p><span id="prp:prop3ss1" class="proposition"><strong>Proposición 1.8  (Propiedades de aplicaciones inversas) </strong></span>Partiendo de
+la Definición <a href="intro.html#def:def3ss1">1.14</a>, se define la aplicación inversa de <span class="math inline">\(f\)</span> dada en la
+Definición <a href="intro.html#def:def3ss6">1.15</a> verifica:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math display">\[f^{-1}(\Omega^{\prime})=\Omega;\]</span></p></li>
+<li><p><span class="math display">\[(f^{-1}(B))^{C}=f^{-1}(B^{C})\quad\forall B\subset\Omega^{\prime};\]</span></p></li>
+<li><p><span class="math display">\[\bigcup\limits_{n\in%
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+}f^{-1}(B_{n})=f^{-1}\left(  \bigcup\limits_{n\in%
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+}B_{n}\right)  \quad\forall\{B_{n}\}_{n\in%
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+}\subset\mathcal{P}(\Omega^{\prime});\]</span> d) <span class="math display">\[\bigcap\limits_{n\in%
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+}f^{-1}(B_{n})=f^{-1}\left(  \bigcap\limits_{n\in%
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+}B_{n}\right)  \quad\forall\{B_{n}\}_{n\in%
+%TCIMACRO{\U{2115} }%
+%BeginExpansion
+\mathbb{N}
+%EndExpansion
+}\subset\mathcal{P}(\Omega^{\prime}).\]</span></p></li>
+</ol>
+</div>
+<div class="remark">
+<p><span id="unlabeled-div-28" class="remark"><em>Nota</em>. </span>Su demostración se propone como primer ejercicio extra al final del tema.</p>
+</div>
+<div class="proposition">
+<p><span id="prp:prop3ss2" class="proposition"><strong>Proposición 1.9  </strong></span>Sea una aplicación
+<span class="math inline">\(f:\Omega\longrightarrow\Omega^{\prime}\)</span> y <span class="math inline">\(\mathcal{C\subset P}(\Omega)\)</span>, t.q. <span class="math inline">\(\mathcal{C\neq\varnothing}\)</span>. Se verifica:</p>
+<p><br/>
+a) <span class="math inline">\(\mathcal{C}\)</span> tiene estructura de álgebra<span class="math inline">\(\Longrightarrow  f^{-1}\left( \mathcal{C}\right)\)</span> tiene estructura de
+álgebra.</p>
+<p>b) <span class="math inline">\(\mathcal{C}\)</span> tiene estructura de <span class="math inline">\(\sigma\)</span>
+-álgebra<span class="math inline">\(\Longrightarrow f^{-1}\left( \mathcal{C}\right)\)</span> tiene
+estructura de <span class="math inline">\(\sigma\)</span>-álgebra.</p>
+<p>c) <span class="math inline">\(\sigma\left( f^{-1}\left( \mathcal{C}\right) \right)  =f^{-1}(\sigma(\mathcal{C}))\)</span>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-29" class="proof"><em>Demostración</em>. </span>(apartado a)
+<br/>
+<span class="math inline">\(A\in f^{-1}\left(  \mathcal{C}\right) \Longrightarrow A^{C}\in f^{-1}\left( \mathcal{C}\right)\)</span>?
+<span class="math display">\[\begin{aligned}
+        &amp;  A\in f^{-1}\left(  \mathcal{C}\right)  \Longrightarrow\exists
+        B\in\mathcal{C}\text{ (álgebra) t.q. }A=f^{-1}(B)\\
+        &amp;  \Longrightarrow\exists B^{C}\in\mathcal{C}\text{ (álgebra) t.q. }%
+        f^{-1}(B^{C})\underset{\text{prop aplicaciones}}{=}\left(  f^{-1}(B)\right)
+        ^{C}=A^{C}\\
+        &amp;  \Longrightarrow A^{C}\in f^{-1}\left(  \mathcal{C}\right)
+    \end{aligned}
+    \]</span>
+<span class="math inline">\(A_{1},...,A_{k}\in f^{-1}\left( \mathcal{C}\right)  \Longrightarrow\bigcup\limits_{i=1}^{k}A_{i}=A_{1}\cup\cdots\cup A_{k}\in  f^{-1}\left( \mathcal{C}\right)\)</span>?
+<span class="math display">\[\begin{aligned}
+        &amp;  A_{1},...,A_{k}\in f^{-1}\left(  \mathcal{C}\right)  \Longrightarrow\exists
+        B_{i}\in\mathcal{C}\text{ (álgebra) t.q. }A_{i}=f^{-1}(B_{i})\text{,
+        }i=1,...,k\\
+        &amp;  \Longrightarrow\exists B=\bigcup\limits_{i=1}^{k}B_{i}\in\mathcal{C}\text{
+            (álgebra) t.q. }f^{-1}(B)\underset{\text{prop aplicaciones}}{=}%
+        \bigcup\limits_{i=1}^{k}f^{-1}(B_{i})=\bigcup\limits_{i=1}^{k}A_{i}\\
+        &amp;  \Longrightarrow\bigcup\limits_{i=1}^{k}A_{i}\in f^{-1}\left(
+        \mathcal{C}\right)  .
+    \end{aligned}
+    \]</span></p>
+</div>
+<hr />
+<div class="remark">
+<p><span id="unlabeled-div-30" class="remark"><em>Nota</em>. </span>Cuando el espacio muestral, <span class="math inline">\(\Omega\)</span>, es numerable
+(finito o infinito), lo habitual en Probabilidad es utilizar como
+<span class="math inline">\(\sigma\)</span>-álgebra el espacio de sucesos, <span class="math inline">\(\mathcal{P}(\Omega)\)</span>. Sin
+embargo, cuando el espacio muestral lo comprenden los reales
+(unidimensionales), <span class="math inline">\(\Omega=\mathbb{R}\)</span>, lo habitual en Probabilidad es utilizar como
+<span class="math inline">\(\sigma\)</span>-álgebra el de Borel, denotado <span class="math inline">\(\mathcal{B}(\mathbb{R})\)</span>, del cual conviene tener ciertas nociones.</p>
+</div>
+<div class="remark">
+<p><span id="unlabeled-div-31" class="remark"><em>Nota</em>. </span>Las demostraciones de b) y c) se proponen como segundo y tercer ejercicio extra del tema.</p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-32" class="definition"><strong>Definición 1.16  </strong></span>(<span class="math inline">\(\sigma\)</span>-álgebra de Borel)
+El <span class="math inline">\(\sigma\)</span>-álgebra de
+Borel es la mı́nima <span class="math inline">\(\sigma\)</span>-álgebra sobre <span class="math inline">\(\Omega=\mathbb{R}\)</span> que contiene a cualquiera de las siguientes familias
+de subconjuntos de <span class="math inline">\(\Omega=\mathbb{R}\)</span>:</p>
+<p>a) los subconjuntos abiertos;</p>
+<p>b) los subconjuntos cerrados;</p>
+<p>c) los intervalos abiertos, <span class="math inline">\((a,b)\in\mathcal{B}(\mathbb{R})\)</span>;</p>
+<p>d) los intervalos cerrados, <span class="math inline">\([a,b]\in\mathcal{B}(\mathbb{R})\)</span>;</p>
+<p>e) los intervalos semiabiertos de la forma <span class="math inline">\((a,b]\in\mathcal{B}(  \mathbb{R}  )\)</span>;</p>
+<p>f) los intervalos semiabiertos de la forma <span class="math inline">\([a,b)\in\mathcal{B}(\mathbb{R})\)</span>;</p>
+<p>g) los intervalos semiabiertos de la forma <span class="math inline">\((-\infty,b]\in\mathcal{B}(\mathbb{R})\)</span>.</p>
+</div>
+</div>
+<div id="colección-de-problemas" class="section level2 unnumbered">
+<h2>Colección de Problemas</h2>
+<ol style="list-style-type: decimal">
+<li><p>Dados el conjunto <span class="math inline">\(B \subset\Omega\)</span> y las sucesiones
+<span class="math inline">\(\left\{ A_{n}: n \geq1\right\} \subset\mathcal{P}(\Omega)\)</span> y
+<span class="math inline">\(\left\{ B_{n}: n \geq\right.\)</span> <span class="math inline">\(1\} \subset\mathcal{P}(\Omega)\)</span>, se
+pide</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Demostar la igualdad <span class="math inline">\(\lim\sup A_{n}=\cap_{k=1}^{\infty} \cup _{n=k}^{\infty} A_{n}\)</span>.</p></li>
+<li><p>Si <span class="math inline">\(A_{n} \downarrow\)</span>, demostrar que existe
+<span class="math inline">\(\lim_{n \rightarrow\infty} A_{n}\)</span> y que
+<span class="math inline">\(\lim_{n \rightarrow\infty} A_{n}=\cap_{n=1}^{\infty} A_{n}\)</span>.</p></li>
+<li><p>Demostrar que
+<span class="math inline">\(\lim\sup A_{n}=\lim\sup A_{2 n} \cup\lim\sup A_{2 n-1}\)</span> y
+<span class="math inline">\(\lim\inf A_{n}=\)</span> <span class="math inline">\(\liminf A_{2 n} \cap\lim\inf A_{2 n-1}\)</span></p></li>
+<li><p>Demostrar que <span class="math inline">\(\lim\sup\left( B-A_{n}\right) =B-\liminf A_{n}\)</span>
+y <span class="math inline">\(\liminf\left( B-A_{n}\right) =\)</span> <span class="math inline">\(B-\limsup A_{n}\)</span></p></li>
+<li><p>Demostrar que
+<span class="math inline">\(\left( \lim\sup A_{n}\right) ^{C}=\lim\inf A_{n}^{C}\)</span> y
+<span class="math inline">\(\left( \liminf A_{n}\right) ^{C}=\lim\sup A_{n}^{C}\)</span>.</p></li>
+<li><p>Demostrar que
+<span class="math inline">\(\lim\sup\left( A_{n} \cup B_{n}\right) =\lim\sup A_{n} \cup\lim\sup B_{n}\)</span> y <span class="math inline">\(\liminf\left( A_{n} \cap\right.\)</span>
+<span class="math inline">\(\left. B_{n}\right) =\liminf A_{n} \cap\liminf B_{n}\)</span></p></li>
+</ol></li>
+<li><p>Determinar los lı́mites inferiores <span class="math inline">\(\mathrm{y}\)</span> superiores de
+<span class="math inline">\(\left\{ A_{n}: n \geq1\right\}\)</span> cuando:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math inline">\(A_{2 n-1}=\mathbb{Q} \cap\left[ \frac{1}{n}, \frac{5 n}{2 n+2}\right]\)</span>
+y
+<span class="math inline">\(A_{2 n}=(\mathbb{R}-\mathbb{Q}) \cap\left( -\frac{2}{n}, \frac{7 n+3}{9 n}\right]\)</span>.</p></li>
+<li><p><span class="math inline">\(A_{3 n-2}=\left( \frac{n-1}{5 n+3}, \frac{2 n-1}{n}\right] , A_{3 n-1}=\left( \frac{3 n}{5 n+1}, \frac{3 n+2}{n}\right)\)</span> y
+<span class="math inline">\(A_{3 n}=\left[ 1, \frac{2 n^{2}+1}{n+2}\right)\)</span>.</p></li>
+<li><p><span class="math inline">\(A_{n}=\left\{ x \in\mathbb{R} : \frac{1}{n} \leq x \leq3-\frac{1}% {n}\right\}\)</span>.</p></li>
+</ol></li>
+<li><p>Supongamos <span class="math inline">\(\Omega=\mathbb{R}^{2}\)</span>. Calcular los conjuntos <span class="math inline">\(\lim_{n \rightarrow\infty} E_{n}, \lim_{n \rightarrow\infty} E_{n}^{C}\)</span>,
+<span class="math inline">\(\lim_{n \rightarrow\infty} F_{n}, \lim_{n \rightarrow\infty} F_{n}^{C}\)</span> y
+<span class="math inline">\(\lim_{n \rightarrow\infty}\left( E_{n} \cap F_{n}^{C}\right)\)</span>, donde
+<span class="math display">\[\begin{aligned}
+&amp;E_{n}=\left\{(x, y) \in \mathbb{R}^{2}: x^{2}+y^{2}&lt;1+\frac{1}{n}\right\}, \\
+&amp;F_{n}=\left\{(x, y) \in \mathbb{R}^{2}: x^{2}+y^{2} \leq \frac{n}{n+1}\right\} .
+\end{aligned}\]</span></p></li>
+<li><p>Calcular <span class="math inline">\(\lim_{n \rightarrow\infty} A_{n}\)</span> en los siguientes casos:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math inline">\(A_{n}=\left\{ (x, y) \in\mathbb{R}^{2}: \frac{1}{n} \leq x^{2}+y^{2} \leq4-\frac{1}{n}\right\}\)</span></p></li>
+<li><p><span class="math inline">\(A_{n}=\left\{ (x, y) \in\mathbb{R}^{2}: 0 \leq x^{2}+y^{2} \leq\frac {1}{n}\right\}\)</span></p></li>
+</ol></li>
+<li><p>Estudiar la convergencia de la sucesión <span class="math inline">\(\left\{ A_{n}: n \geq1\right\} \subset\mathcal{P}(\Omega)\)</span> en los siguientes casos:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math inline">\(A_{n}=\left( -\frac{1}{n}, 1\right]\)</span> si <span class="math inline">\(n\)</span> es par, y
+<span class="math inline">\(\left( -1, \frac{1}{n}\right]\)</span> si <span class="math inline">\(n\)</span> es impar.</p></li>
+<li><p><span class="math inline">\(A_{n}=\left( 0,1-\frac{1}{n}\right]\)</span> si <span class="math inline">\(n\)</span> es impar, y
+<span class="math inline">\(\left[ \frac {1}{n}, 1\right)\)</span> si <span class="math inline">\(n\)</span> es par.</p></li>
+</ol></li>
+</ol>
+</div>
+<div id="ejercicios-extra" class="section level2 unnumbered">
+<h2>Ejercicios extra</h2>
+<ol style="list-style-type: decimal">
+<li>Demuestra las cuatro propiedades de aplicaciones inversas de la Proposición <a href="intro.html#prp:prop3ss1">1.8</a>.</li>
+<li>Demuestra el apartado b) de la Proposición <a href="intro.html#prp:prop3ss2">1.9</a>.</li>
+<li>Demuestra el apartado c) de la Proposición <a href="intro.html#prp:prop3ss2">1.9</a>.</li>
+</ol>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="probabilidad.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
